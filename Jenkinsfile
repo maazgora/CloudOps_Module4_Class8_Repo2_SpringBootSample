@@ -1,12 +1,9 @@
 pipeline {
-    agent { 
-        node {
-            label 'Java-Node'
-        }
+    agent any
     tools {
         maven 'Maven 3.9.5'
     }    
-    }
+    
     parameters {
         choice(
             choices: ['true' , 'false'],
