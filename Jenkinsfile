@@ -3,6 +3,9 @@ pipeline {
         node {
             label 'Java-Node'
         }
+    tools {
+        maven 'Maven 3.9.5'
+    }    
     }
     parameters {
         choice(
